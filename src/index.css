@@ -1,4 +1,17 @@
 @tailwind base;
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+a {
+  @apply text-blue-600 underline;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -18,6 +31,9 @@ code {
 
 @layer components {
   .btn-primary {
-    @apply pointer-events-auto ml-8 rounded-md bg-indigo-600 px-3 py-2 font-semibold leading-5 text-white hover:bg-indigo-500;
+    @apply pointer-events-auto rounded-md bg-indigo-600 px-3 py-2 font-semibold leading-5 text-white hover:bg-indigo-500;
+  }
+  .btn-secondary {
+    @apply pointer-events-auto ml-1 rounded-md bg-white px-3 py-2 font-semibold leading-5 text-gray-900 border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700;
   }
 }

@@ -1,10 +1,12 @@
 import './App.css';
-import Game from "./components/tictactoe/Game";
+import Reducer2 from "./components/reducer2/Reducer2";
 
 function App() {
   return (
     <div className="App">
-        <Game></Game>
+        {/*<Game></Game>*/}
+        {/*<Reducer></Reducer>*/}
+        <Reducer2></Reducer2>
     </div>
 
   );
